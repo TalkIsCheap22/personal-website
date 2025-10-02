@@ -1,0 +1,14 @@
+# macOS
+.DS_Store
+
+# 临时文件
+*.swp
+
+# 二进制大文件（可按需排除）
+*.pdf
+*.pptx
+*.jpg
+*.jpeg
+*.png
+*.avif
+

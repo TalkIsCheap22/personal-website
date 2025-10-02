@@ -1,0 +1,415 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Yichen Di</title>
+  <link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
+  <link rel="shortcut icon" type="image/x-icon" href="images/thu_icon.png">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+  <!-- Bulma Version 0.7.5-->
+  <link rel="stylesheet" href="https://unpkg.com/bulma@0.7.5/css/bulma.min.css" />
+  <link href='css/style.css?_t=20200916' rel='stylesheet' type='text/css'>
+  <script defer src="font-awesome/js/brands.min.js"></script>
+  <script defer src="font-awesome/js/regular.min.js"></script>
+  <script defer src="font-awesome/js/fontawesome.min.js"></script>
+    <style>
+      .red {
+        color: rgb(238, 76, 44);
+        font-style: normal;
+      }
+      .blue {
+        color: rgb(238, 76, 44);
+        font-style: normal;
+      }
+       
+      #intro {
+       margin-top: 0em !important;
+      }
+      
+      .content h3 {
+       margin-bottom: 1em!important;
+       margin-top: 2em!important;
+      }
+
+      .content figure {
+       width: 90%;
+       display: flex;
+       align-items: center;
+       overflow: hidden;
+       margin-left: auto!important;
+       margin-right: auto!important;
+      }
+      
+      .columns:not(:last-child) {
+       margin-bottom: 1.75rem!important;
+      }
+
+      #sidebar {
+        width: 75%;
+      }
+
+      @media screen and (min-width: 769px), print {
+        .column.is-2_5, .column.is-2-tablet {
+          flex: none;
+          width: 20%;
+        }
+      }
+</style>
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js" crossorigin="anonymous"></script>
+</head>
+
+
+<body>
+  <section class="section">
+    <div class="container">
+      <div class="columns">
+        <div class="column is-2_5">
+          <div class="sticky">
+            <figure class="image" style="width: 11.6rem; margin-top: 6px;">
+              <img src="images/myself.jpeg">
+            </figure>
+            <div class="content">
+              <h2 style="margin-top: 1em">Yichen Di</h2>
+              <p>
+                <b>Tsinghua University</b><br/> 
+                Haidian, Beijing<br/> 
+                China
+              </p>
+            </div>
+            <!-- social network icons -->
+            <div class="social">
+              <a href="https://github.com/TalkIsCheap22" target="_blank">
+                <span class="fab fa-github fa-2x" style="display:inline; text-decoration: none; color: #4a4a4a;"></span>
+              </a>
+              <a href="https://scholar.google.com/citations?view_op=new_profile&hl=en" target="_blank">
+                <span class="fab fa-google fa-2x" style="display:inline; text-decoration: none; color: #4a4a4a; margin-left: 15px"></span>
+              </a>
+              <a href="https://www.linkedin.com/in/yichen-di-734243349/" target="_blank">
+                <span class="fab fa-linkedin fa-2x" style="display:inline; text-decoration: none; color: #4a4a4a; margin-left: 15px"></span>
+              </a>
+              <a href="mailto:diyc041018@gmail.com" target="_blank">
+                <span class="fa-regular fa-envelope fa-2x" style="display:inline; text-decoration: none; color: #4a4a4a; margin-left: 15px"></span>
+              </a>
+            </div>
+
+
+            <div id="sidebar" class="menu sticky is-hidden-mobile">
+              <p class="menu-label"><b>Quick Links</b></p>
+              <ul class="menu-list">
+                <li><a href="#intro">About Me</a></li>
+               <li><a href="#education">Education</a></li>
+                <li><a href="#research">Research</a></li>
+                <li><a href="#wexperience">Work Experience</a></li>
+                <li><a href="#misc">Miscellaneous</a></li>
+              </ul>
+            </div>
+          </div>
+
+
+
+        </div>
+        <div class="column right-panel">
+          <div class="content">
+
+
+            <!--About Me-->
+            <!--About Me-->
+<h2 id="intro">About Me</h2>
+<p>
+  I am Yichen Di, an undergraduate student in <b>Software Engineering</b> at <a href="https://www.tsinghua.edu.cn/en/">Tsinghua University</a>. My primary research interests are in AI for Science, focusing on neural operators and PDE modeling over complex geometries. Previously, I also worked on large language model robustness and watermarking to ensure their safety and reliability.
+  </p>
+  
+  <p>
+  Currently, I am a research intern at the <a href="https://www.cms.caltech.edu/">California Institute of Technology</a>, working with <a href="https://www.anima-ai.org/">Prof. Anima Anandkumar</a> on neural operator architectures for fluid dynamics, improving their generalizability and scalability. 
+  Previously, I worked with <a href="https://ml.cs.tsinghua.edu.cn/">Prof. Mingsheng Long</a> on scalable neural PDE solvers, leading to <a href="https://arxiv.org/abs/2502.01395" target="_blank"><i>Transolver++</i> (ICML 2025)</a>, and with <a href="https://www.thss.tsinghua.edu.cn/en/faculty/ljwen.html">Prof. Lijie Wen</a> on LLM robustness and watermarking, resulting in <a href="https://arxiv.org/abs/2502.05867" target="_blank"><i>WaterSeeker</i> (NAACL 2025)</a> and contributions to the open-source toolkit <a href="https://github.com/THU-BPM/MarkLLM" target="_blank">MarkLLM</a>. 
+  </p>
+  
+  <p>
+  Beyond research, I actively participate in cross-cultural student activities at Tsinghua, including organizing global youth forums and representing my department in music and sports events.
+  </p>
+  
+            
+<!--Education-->
+            <!--Education-->
+<h2 id="education" style="margin-bottom: 25px;">Education</h2>
+
+<article class="columns">
+  <div class="column is-3">
+    <figure class="image">
+      <img src="images/thu.jpg" class="img-logo">
+    </figure>
+  </div>
+  <div class="column">
+    <div class="content">
+      <p>
+        <b>B.Eng. in Software Engineering</b> | <a href="https://www.tsinghua.edu.cn/en/">Tsinghua University</a><br>
+        Time: Sept. 2022 – Jul. 2026 (expected)<br>
+        School of Software
+      </p>
+    </div>
+  </div>
+</article>
+
+
+<!--Research-->
+<h2 id="research">Research</h2>
+
+<!-- Transolver++ -->
+<article class="columns">
+  <div class="column is-3">
+    <figure class="image">
+      <img src="images/transolverpp.png">
+    </figure>
+  </div>
+  <div class="column">
+    <div class="content">
+      <p>
+        <b>Transolver++: An Accurate Neural Solver for PDEs on Million-Scale Geometries</b><br>
+        <b>Yichen Di</b>, Ziqi Wang, Zonghao Chen, Zihao Li, Chen Zhang, Zihan Zhang, Shixuan Sun, Mingsheng Long<br>
+        <b><span style="color:#E02401">[ICML 2025]</span></b>
+      </p>
+      <p>
+        <i>Transolver++</i> is a highly parallel neural solver designed for large-scale PDEs, extending input capacity from millions to tens of millions of mesh points. It effectively captures fine-grained local physics and achieves state-of-the-art performance in industrial-scale simulations.
+      </p>
+      <p>
+        <a href="https://arxiv.org/abs/2502.02414" target="_blank">[Paper]</a>
+        <a href="https://github.com/thuml/Transolver_plus" target="_blank">[Code]</a>
+      </p>
+    </div>
+  </div>
+</article>
+
+<!-- WaterSeeker -->
+<article class="columns">
+  <div class="column is-3">
+    <figure class="image">
+      <img src="images/waterseeker.png">
+    </figure>
+  </div>
+  <div class="column">
+    <div class="content">
+      <p>
+        <b>WaterSeeker: Pioneering Efficient Detection of Watermarked Segments in Large Documents</b><br>
+        <b>Yichen Di</b>, Yuxuan Liu, Ziqi Wang, Siyu Sun, Jiarui Han, Yufei Feng, Lijie Wen<br>
+        <b><span style="color:#E02401">[NAACL 2025]</span></b>
+      </p>
+      <p>
+        <i>WaterSeeker</i> introduces an efficient framework for detecting watermarked text segments within large documents. Combining anomaly extraction with local traversal, it achieves a superior trade-off between detection accuracy and computational efficiency, enhancing the robustness of watermarking detection in real-world scenarios.
+      </p>
+      <p>
+        <a href="https://arxiv.org/abs/2409.05112" target="_blank">[Paper]</a>
+        <a href="https://github.com/THU-BPM/WaterSeeker" target="_blank">[Code]</a>
+      </p>
+    </div>
+  </div>
+</article>
+
+<!-- Caltech Neural Operators -->
+<article class="columns">
+  <div class="column is-3">
+    <figure class="image">
+      <img src="images/figconv.png">
+    </figure>
+  </div>
+  <div class="column">
+    <div class="content">
+      <p>
+        <b>Learning Flow-Physics on Complex Geometries with Neural Operators</b><br>
+        Summer Researcher, Anima AI + Science Lab, Caltech
+      </p>
+      <p>
+        This project develops methods to enhance neural operators for computational fluid dynamics, focusing on both architectural refinements and conditioning strategies. It reveals the importance of dataset completeness and explores applications of neural surrogates to aerodynamic shape optimization.
+      </p>
+    </div>
+  </div>
+</article>
+
+<!-- MarkLLM -->
+<article class="columns">
+  <div class="column is-3">
+    <figure class="image">
+      <img src="images/markllm.png">
+    </figure>
+  </div>
+  <div class="column">
+    <div class="content">
+      <p>
+        <b>MarkLLM: An Open-Source Toolkit for LLM Watermarking</b><br>
+        Contributor, Tsinghua University<br>
+        <a href="https://github.com/THU-BPM/MarkLLM" target="_blank">[GitHub, 600+ stars]</a>
+      </p>
+      <p>
+        <i>MarkLLM</i> is an open-source toolkit offering a unified and extensible framework for LLM watermarking algorithms. It integrates diverse methods within automated pipelines for various watermarking analysis, while also providing visualization tools that make token-level watermarking mechanisms transparent to researchers and practitioners.
+      </p>
+    </div>
+  </div>
+</article>
+
+
+
+<!--Work Experience-->
+<h2 id="wexperience" style="margin-bottom: 25px;">Work Experience</h2>
+
+<article class="columns">
+  <div class="column is-3">
+    <figure class="image">
+      <img src="images/caltech.jpg" class="img-logo">
+    </figure>
+  </div>
+  <div class="column">
+    <div class="content">
+      <p>
+        <b>Summer Researcher</b> | Anima AI + Science Lab, California Institute of Technology<br>
+        June 2025 – Sept. 2025<br>
+        Advisor: <a href="https://www.anima-ai.org/">Prof. Anima Anandkumar</a>
+      </p>
+      <p>Investigated Neural Operators for PDEs over complex geometries and explored their applications to shape optimization problems in fluid dynamics.</p>
+    </div>
+  </div>
+</article>
+
+<article class="columns">
+  <div class="column is-3">
+    <figure class="image">
+      <img src="images/thu_software.jpg" class="img-logo">
+    </figure>
+  </div>
+  <div class="column">
+    <div class="content">
+      <p>
+        <b>Undergraduate Researcher</b> | <a href="https://ml.cs.tsinghua.edu.cn/">Mingsheng Long Lab</a>, Tsinghua University<br>
+        Oct. 2024 – Present<br>
+        Advisor: <a href="https://ml.cs.tsinghua.edu.cn/">Prof. Mingsheng Long</a>
+      </p>
+      <p>Focused on AI for Science, advancing neural operator research and co-authoring <a href="https://arxiv.org/abs/2502.01395" target="_blank"><i>Transolver++</i> (ICML 2025)</a> to enhance scalability and generalization of PDE solvers. Also contributed to <i>NeuralTunnel</i>, a toolkit for multi-domain PINN tasks.</p>
+    </div>
+  </div>
+</article>
+
+<article class="columns">
+  <div class="column is-3">
+    <figure class="image">
+      <img src="images/thu_software.jpg" class="img-logo">
+    </figure>
+  </div>
+  <div class="column">
+    <div class="content">
+      <p>
+        <b>Undergraduate Researcher</b> | <a href="https://www.thss.tsinghua.edu.cn/en/faculty/ljwen.html">Lijie Wen Lab</a>, Tsinghua University<br>
+        Sept. 2023 – Sept. 2024<br>
+        Advisor: <a href="https://www.thss.tsinghua.edu.cn/en/faculty/ljwen.html">Prof. Lijie Wen</a>
+      </p>
+      <p>Researched the safety of large language models, leading to <a href="https://arxiv.org/abs/2502.05867" target="_blank"><i>WaterSeeker</i> (NAACL 2025)</a> and contributions to the open-source watermarking toolkit <a href="https://github.com/THU-BPM/MarkLLM" target="_blank">MarkLLM</a>, alongside broader NLP studies.</p>
+    </div>
+  </div>
+</article>
+
+<article class="columns">
+  <div class="column is-3">
+    <figure class="image">
+      <img src="images/thu_keg.png" class="img-logo">
+    </figure>
+  </div>
+  <div class="column">
+    <div class="content">
+      <p>
+        <b>Undergraduate Researcher</b> | Knowledge Engineering Group, Tsinghua University<br>
+        Oct. 2022 – Aug. 2023<br>
+        Advisor: Prof. Jie Tang
+      </p>
+      <p>Studied robustness of large language models, building corner-case benchmarks and exploring adversarial and jailbreak prompt attacks to analyze model vulnerabilities.</p>
+    </div>
+  </div>
+</article>
+
+
+<h2 id="misc" style="margin-bottom: 25px;">Miscellaneous</h2>
+    <p>
+      Outside of research, I am passionate about music and sports. I enjoy singing and playing the piano, often performing in student events. 
+      I am also an active athlete, with experience in football, basketball, swimming, and frisbee.
+    </p>
+
+   <!-- ########## Tools: Visitor Locations Visualization ########## -->
+<script type="text/javascript" src="//rf.revolvermaps.com/0/0/8.js?i=5mz7hnrbg3y&amp;m=0&amp;c=ff0000&amp;cr1=ffffff&amp;f=arial&amp;l=33" async="async"></script>
+
+    <!-- Footer -->
+    <footer class="container">
+      <br><hr>
+      <div class="row" style="text-align: center">
+        © 2025 Yichen Di
+      </div>
+    </footer>
+  </section>
+
+
+  <script>
+
+    var $hashList = $('.menu-list a'), offsetList, maxScrollHeight;
+
+    $('#sidebar').on('click', 'a', function(){
+      activate($(this))
+    });
+    
+    $(window).on('resize', debounce(calculateBoundary, 300));
+
+    $(document).on('scroll', debounce(judgeScroll, 300));
+
+    calculateBoundary();
+    judgeScroll();
+    
+    function  calculateBoundary() {
+      offsetList = $hashList.map(function(idx, ele){
+        return $(ele.hash).offset().top
+      });
+      maxScrollHeight = $(document).height() - $(window).height()
+    }
+    
+    function judgeScroll() {
+      var tps = $("html").scrollTop()
+              ? $("html").scrollTop()
+              : $("body").scrollTop(),
+              len = offsetList.length;
+      if(tps >= maxScrollHeight-10){
+        activate($hashList.eq(len-1));
+        return
+      }
+      for(var i=0; i<len; i++){
+       if(tps+50<offsetList[i]){
+          activate($hashList.eq(Math.max(0,i-1)));
+          return
+        }
+      }
+    }
+
+    function activate(ele){
+      $hashList.removeClass('is-active');
+      ele.addClass('is-active');
+    }
+
+    function debounce(fn, delay) {
+      var timeout = null;
+      return function () {
+        var args = arguments;
+        var context = this;
+        if (!timeout) {
+          timeout = setTimeout(function () {
+            timeout = 0;
+            return fn.apply(context, args);
+          }, delay);
+        }
+      };
+    }
+
+
+
+  </script>
+
+
+</body>
+
+</html>
+
