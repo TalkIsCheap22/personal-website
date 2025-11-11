@@ -58,6 +58,36 @@
           width: 20%;
         }
       }
+/* Image modal viewer */
+.img-zoomable {
+  cursor: zoom-in;
+  transition: transform 0.2s;
+}
+#imgModal {
+  display: none;
+  position: fixed;
+  z-index: 9999;
+  padding-top: 60px;
+  left: 0; top: 0;
+  width: 100%; height: 100%;
+  overflow: auto;
+  background-color: rgba(0,0,0,0.85);
+}
+#imgModal img {
+  margin: auto;
+  display: block;
+  max-width: 80%;
+  max-height: 80%;
+}
+#imgModal span {
+  position: absolute;
+  top: 20px;
+  right: 35px;
+  color: #fff;
+  font-size: 40px;
+  cursor: pointer;
+}
+
 </style>
     <script src="https://code.jquery.com/jquery-3.1.1.min.js" crossorigin="anonymous"></script>
 </head>
@@ -158,11 +188,37 @@
 <!--Research-->
 <h2 id="research">Research</h2>
 
+<!-- Caltech Neural Operators -->
+<article class="columns">
+  <div class="column is-3">
+    <figure class="image">
+      <img src="images/fgnet.png" class="img-zoomable">
+    </figure>
+  </div>
+  <div class="column">
+    <div class="content">
+      <p>
+        <b>Geometry-Aware Neural Surrogates for Propeller CFD Prediction</b><br>
+        <b>Yichen Di</b>,  Valentin Duruisseaux, Di Zhou, Xinyi Li, Daniel Leibovici, Jean Kossaifi, Anima Anandkumar<br>
+        <b><span style="color:#E02401">[AAAI2026 AI2ASE Oral]</span></b>
+      </p>
+      <p>
+        Developed the <i>Factorized Geometry Network (FGNet)</i>, a geometry-aware neural surrogate for propeller CFD prediction under limited data. FGNet extends the FIGConv architecture with signed distance function conditioning, interpolation-based decoding, and auxiliary global thrust supervision to improve both accuracy and physical consistency. Trained on a newly generated propeller CFD dataset, it achieves the best performance among baselines.
+      </p>
+      <p>
+        <a href="https://arxiv.org/abs/xxxx.xxxxx" target="_blank">[Paper]</a>
+        <!-- Optional link: replace with real repo if public -->
+        <!-- <a href="https://github.com/yourrepo/FGNet" target="_blank">[Code]</a> -->
+      </p>
+    </div>
+  </div>
+</article>
+
 <!-- Transolver++ -->
 <article class="columns">
   <div class="column is-3">
     <figure class="image">
-      <img src="images/transolverpp.png">
+      <img src="images/transolverpp.png" class="img-zoomable">
     </figure>
   </div>
   <div class="column">
@@ -187,7 +243,7 @@
 <article class="columns">
   <div class="column is-3">
     <figure class="image">
-      <img src="images/waterseeker.png">
+      <img src="images/waterseeker.png" class="img-zoomable">
     </figure>
   </div>
   <div class="column">
@@ -208,31 +264,11 @@
   </div>
 </article>
 
-<!-- Caltech Neural Operators -->
-<article class="columns">
-  <div class="column is-3">
-    <figure class="image">
-      <img src="images/figconv.png">
-    </figure>
-  </div>
-  <div class="column">
-    <div class="content">
-      <p>
-        <b>Learning Flow-Physics on Complex Geometries with Neural Operators</b><br>
-        Summer Researcher, Anima AI + Science Lab, Caltech
-      </p>
-      <p>
-        This project develops methods to enhance neural operators for computational fluid dynamics, focusing on both architectural refinements and conditioning strategies. It reveals the importance of dataset completeness and explores applications of neural surrogates to aerodynamic shape optimization.
-      </p>
-    </div>
-  </div>
-</article>
-
 <!-- MarkLLM -->
 <article class="columns">
   <div class="column is-3">
     <figure class="image">
-      <img src="images/markllm.png">
+      <img src="images/markllm.png" class="img-zoomable">
     </figure>
   </div>
   <div class="column">
@@ -407,6 +443,23 @@
 
 
   </script>
+
+  <!-- Modal for zoomed image -->
+<div id="imgModal">
+  <span onclick="document.getElementById('imgModal').style.display='none'">&times;</span>
+  <img id="modalImg" src="">
+</div>
+
+<script>
+  document.querySelectorAll('.img-zoomable').forEach(img => {
+    img.addEventListener('click', () => {
+      const modal = document.getElementById('imgModal');
+      const modalImg = document.getElementById('modalImg');
+      modal.style.display = 'block';
+      modalImg.src = img.src;
+    });
+  });
+</script>
 
 
 </body>
